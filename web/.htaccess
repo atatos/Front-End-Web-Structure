@@ -1,0 +1,9 @@
+# Include Html templates
+Options +FollowSymLinks +Includes +Indexes
+
+AddType text/html .html
+AddHandler server-parsed .html
+AddCharset UTF-8 html
+
+
+
