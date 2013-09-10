@@ -1,35 +1,99 @@
+/* @AUTHOR : Mohamed ATAOUSSE, VOID */
+/* @Created by ATATOS - 09/2013 */ 
 
 /* ----------------------------- */
 /* summary */
 /* --------------------------- */
 
-/ 1-  BlockName1
-/ 2-  BlockName2
-/ 3-  BlockName3
-/ 4-  BlockName4
-/ 5-  BlockName5
-/ 6-  BlockName6
-/ 7-  BlockName7
-/ 8-  BlockName8
-/ 9-  BlockName9
+// 1-  COMPASS
+// 2-  RESET & COMPASS COMPLEMENTARIES
+// 3-  VARIABLES + MIXINS
+// 4-  SPRITE
+// 5-  PAGE STRUCTURE
+// 6-  RESPONSIVE LAYOUTS 
+// 7-  CROSS BROWSER - IE
 
 
+// ➔ @TODO (tâche restante avant livraison)
+// ➔ @NOTE (note pour les autres = commentaire important)
+// ➔ @BUGFIX (détail sur la technique de correction de bug utilisée)
+// ➔ @TESTED (navigateurs testés)
+// ➔ @SEE (lien vers une ressource en ligne)
 
-/ ➔ @TODO (tâche restante avant livraison)
-/ ➔ @NOTE (note pour les autres = commentaire important)
-/ ➔ @BUGFIX (détail sur la technique de correction de bug utilisée)
-/ ➔ @TESTED (navigateurs testés)
-/ ➔ @SEE (lien vers une ressource en ligne)
+// exemple
 
-/ exemple
+// @AUTHOR : Mohamed ATAOUSSE, VOID
+// @BUGFIX : bug IE6/IE7 de haslayout, résolu avec zoom: 1
+// @TODO : corriger le problème d'espace entre les listes
 
-/* @AUTHOR : Elasmai Elmehdi, VOID */
-/* @BUGFIX : bug IE6/IE7 de haslayout, résolu avec zoom: 1 */
-/* @TODO : corriger le problème d'espace entre les listes */
+///* ----------------------------- */
+///* ==BlockName */
+///* ----------------------------- */
 
-/* ----------------------------- */
-/* ==BlockName */
-/* ----------------------------- */
+///* Simple Comments */
+
+/* ------------------------------------------------------------------------------------------------------------*/
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* == COMPASS ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+
+@import "compass";
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* == RESET & COMPASS COMPLEMENTARIES ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+
+@import "compass/reset"; 
+@import "compass/css3";
+@import "compass/utilities/general/float";
+@import "compass/typography/links/link-colors";
+@import "compass/typography/lists/inline-list";
+@import "compass/typography/lists/bullets";
+@import "compass/typography/lists/inline-block-list";
+@import "compass/typography/text";
+@import "compass/support"; 
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* == VARIABLES + MIXINS -------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+
+@import "bases/variables"; 
+@import "bases/mixins";  
+ 
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* == SPRITE ------------------------------------------------------------------------------------------ */
+/* ---------------------------------------------------------------------------------------------------- */
+
+@import "bases/sprites";  
 
 
-/* Simple Comments */
+/* -------------------------------------------------------------------------------------------------- */
+/* == PAGE STRUCTURE -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------- */
+
+@import "bases/global"; 
+@import "bases/typography";
+@import "modules/buttons";
+@import "modules/pictos";
+@import "layouts/header";
+@import "modules/popins";
+@import "modules/forms";
+@import "modules/navigation";
+@import "layouts/sidebar";
+@import "layouts/content";
+@import "layouts/footer";
+
+/* -------------------------------------------------------------------------------------------------- */
+/* == Devices  -------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------- */
+
+@import "layouts/mediaquery"; 
+
+/* ------------------------------------------------------------------------------------------------- */
+/* == CROSS BROWSER - IE --------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------- */
+
+@import "ie/_lte8";
+@import "ie/_lte9";

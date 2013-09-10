@@ -1,8 +1,24 @@
-define(['jquery'],function($){
-	return {
-		init : function(){
-			console.log('model app');
-		}
-	}
-	
-});
+(function(){
+
+	define([ 'bxslider' ],function($){
+
+	var home = {},
+
+	Home = {
+
+		init:function(){
+
+
+
+		},
+
+	};
+
+	home.init = function(){
+		Home.init();
+	};
+
+		return home;
+	});
+
+}).call(this);

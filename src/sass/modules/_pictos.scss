@@ -1,0 +1,40 @@
+/* ------------------ */
+/* == Pictos          */
+/* ------------------ */
+
+#menu {
+	background: url("../images/pictos/menu.png") no-repeat;
+	width: 55px;
+	height: 52px;
+	overflow: hidden;
+	cursor: pointer;
+}
+#help {
+	background: url("../images/pictos/aide.png") no-repeat;
+	width: 49px;
+	height: 52px;
+	overflow: hidden;
+	cursor: pointer;
+}
+#add_files {
+	background: url("../images/pictos/fichier.png") no-repeat;
+	width: 72px;
+	height: 52px;
+	overflow: hidden;
+	cursor: pointer;
+}
+#account {
+	background: url("../images/pictos/compte.png") no-repeat;
+	width: 65px;
+	height: 52px;
+	overflow: hidden;
+	cursor: pointer;
+}
+#selection {
+	margin: 0 0 0 2px;
+	background: url("../images/pictos/selection.png") no-repeat;
+	width: 79px;
+	height: 52px;
+	overflow: hidden;
+	cursor: pointer;
+}
